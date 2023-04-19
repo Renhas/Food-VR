@@ -13,9 +13,18 @@ public class FoodAndDrinks : MonoBehaviour
 
     void Start()
     {
-        food = Instantiate(foods[Random.Range(0, foods.Count)]);
-        drink = Instantiate(drinks[Random.Range(0, drinks.Count)]);
-        bar = Instantiate(barOrigin);
+        if (transform.childCount == 0)
+        {
+            food = Instantiate(foods[Random.Range(0, foods.Count)]);
+            drink = Instantiate(drinks[Random.Range(0, drinks.Count)]);
+            bar = Instantiate(barOrigin);
+        }
+        else 
+        {
+            drink = transform.GetChild(0).gameObject;
+            food = transform.GetChild(1).gameObject;
+            bar = transform.GetChild(2).gameObject;
+        }
 
         drink.transform.SetParent(transform);
         food.transform.SetParent(transform);

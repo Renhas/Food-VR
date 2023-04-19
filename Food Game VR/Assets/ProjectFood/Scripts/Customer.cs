@@ -16,9 +16,9 @@ public class Customer : MonoBehaviour
     void Update() 
     {
         if (elements.transform.childCount < 3) return;
-
-        if (!elements.CheckBar())
+        if (!elements.CheckBar() && elements.transform.childCount == 3)
         {
+            Debug.Log("Bar");
             manager.RemoveScore();
             Leave();
         }

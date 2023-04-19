@@ -12,20 +12,19 @@ public class ProgressBar : MonoBehaviour
     [SerializeField] private bool progressiv = true;
 
     private float progress;
-
+    private Coroutine coroutine;
 
     void Start()
     {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         fillTime = manager.CustomerWaitTime;
         bar = GetComponent<Image>();
-        StartCoroutine(Fill());
+        progress = progressiv ? 0f : fillTime;
+        coroutine = StartCoroutine(Fill());
     }
 
     IEnumerator Fill() 
     {
-        progress = progressiv ? 0f : fillTime;
-
         while (progressiv ? (progress <= fillTime) : (progress >= 0)) 
         {
             if (manager.customerFrozen) 
@@ -41,7 +40,6 @@ public class ProgressBar : MonoBehaviour
 
     public void GiveCookies() 
     {
-        Debug.Log("Вкусно");
         progress += manager.Cookies;
         progress = Mathf.Min(progress, fillTime);
     }
