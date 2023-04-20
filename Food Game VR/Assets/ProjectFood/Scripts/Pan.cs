@@ -9,8 +9,10 @@ public class Pan : MonoBehaviour
     private GameObject child;
     [SerializeField]
     private GameObject generatable;
+    private AudioSource audio;
     void Start()
     {
+        audio = transform.GetChild(1).gameObject.GetComponent<AudioSource>();
         inv = GameObject.Find("Inventory").GetComponent<InvManager>();
         child = transform.GetChild(0).gameObject;
         child.SetActive(false);
@@ -51,6 +53,7 @@ public class Pan : MonoBehaviour
 
         child.SetActive(true);
         StartCoroutine(child.GetComponent<Cook>().Cooking());
+        audio.Play();
 
         inv.Clear();
     }

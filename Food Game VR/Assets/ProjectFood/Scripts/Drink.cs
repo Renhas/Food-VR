@@ -10,11 +10,14 @@ public class Drink : MonoBehaviour
     private int currentChild = 0;
     private bool isAnim = false;
     public bool isStatic = false;
+    private AudioSource sound;
     void Start()
     {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         inv = GameObject.Find("Inventory").GetComponent<InvManager>();
+        sound = transform.GetChild(3).gameObject.GetComponent<AudioSource>();
         ChildVisible(isStatic);
+        sound.gameObject.SetActive(true);
         TriggerCreate();
     }
     private void ChildVisible(bool mode) 
@@ -59,6 +62,8 @@ public class Drink : MonoBehaviour
             transform.GetChild(0).gameObject.SetActive(true);
             transform.GetChild(1).gameObject.SetActive(true);
             StartCoroutine(Anim());
+            Debug.Log(sound);
+            sound.Play();
         }
         else if (item.CompareTag(child.gameObject.tag) && item.layer == child.gameObject.layer)
         {

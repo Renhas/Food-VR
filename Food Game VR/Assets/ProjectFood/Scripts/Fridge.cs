@@ -11,11 +11,19 @@ public class Fridge : MonoBehaviour
     private float animationDuration = 2f;
     [SerializeField]
     private bool isOpen = false;
-
+    private AudioSource sound;
     private bool isAnim = false;
+    private void Start() 
+    {
+        sound = transform.GetChild(0).gameObject.GetComponent<AudioSource>();
+    }
     public void Open() 
     {
-        if(!isAnim) StartCoroutine(Anim());
+        if (!isAnim) { 
+            StartCoroutine(Anim());
+            Debug.Log(sound);
+            sound.Play();
+        }
     }
 
     private IEnumerator Anim() 
