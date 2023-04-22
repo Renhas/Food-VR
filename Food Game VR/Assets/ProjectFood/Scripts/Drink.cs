@@ -11,6 +11,15 @@ public class Drink : MonoBehaviour
     private bool isAnim = false;
     public bool isStatic = false;
     private AudioSource sound;
+
+    public float Progress
+    {
+        get
+        {
+            return (float)currentChild / (transform.childCount - 1);
+        }
+    }
+
     void Start()
     {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();

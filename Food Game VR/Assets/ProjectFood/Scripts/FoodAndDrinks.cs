@@ -48,6 +48,8 @@ public class FoodAndDrinks : MonoBehaviour
 
     public bool CheckBar() 
     {
-        return bar.GetComponentInChildren<ProgressBar>().GetProgress() > 0;
+        var value = bar.GetComponentInChildren<ProgressBar>().GetProgress();
+        if (System.Single.IsNaN(value)) return true;
+        return value > 0 && value <= 1;
     }
 }

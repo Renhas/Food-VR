@@ -18,7 +18,6 @@ public class QuestBook : Quest
     {
         base.Check();
         var distance = (book.transform.position - player.transform.position).magnitude;
-        Debug.Log(distance);
         if (distance <= distanceToBook) 
         {
             

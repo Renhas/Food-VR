@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class Quest : MonoBehaviour
 {
+    [TextArea]
     public string Description;
     public string Title;
     public bool Done = false;
     [SerializeField]
-    protected GameObject pointer;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        pointer?.SetActive(!Done);
-    }
+    public GameObject pointer;
 
     public virtual void Check() 
     {
         if (Done) return;
+    }
+
+    public virtual void StartQuest() 
+    {
+        Done = false;
     }
 }
