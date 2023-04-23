@@ -9,6 +9,7 @@ public class Food : MonoBehaviour
     private int currentChild = 0;
 
     public bool isCooked { get { return currentChild == transform.childCount; } }
+    public float Progress { get { return (float)currentChild / transform.childCount; } }
     void Start()
     {
         inv = GameObject.Find("Inventory").GetComponent<InvManager>();

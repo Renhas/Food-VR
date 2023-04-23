@@ -71,8 +71,7 @@ public class Drink : MonoBehaviour
             transform.GetChild(0).gameObject.SetActive(true);
             transform.GetChild(1).gameObject.SetActive(true);
             StartCoroutine(Anim());
-            Debug.Log(sound);
-            sound.Play();
+            
         }
         else if (item.CompareTag(child.gameObject.tag) && item.layer == child.gameObject.layer)
         {
@@ -91,6 +90,7 @@ public class Drink : MonoBehaviour
 
     private IEnumerator Anim() 
     {
+        sound.Play();
         isAnim = true;
         var juice = transform.GetChild(1);
         float progress = 0;
@@ -106,5 +106,6 @@ public class Drink : MonoBehaviour
 
         isAnim = false;
         currentChild = 2;
+        sound.Stop();
     }
 }

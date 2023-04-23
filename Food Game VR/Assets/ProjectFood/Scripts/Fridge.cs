@@ -21,7 +21,6 @@ public class Fridge : MonoBehaviour
     {
         if (!isAnim) { 
             StartCoroutine(Anim());
-            Debug.Log(sound);
             sound.Play();
         }
     }

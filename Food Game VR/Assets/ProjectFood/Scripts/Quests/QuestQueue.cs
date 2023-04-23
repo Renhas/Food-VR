@@ -12,6 +12,8 @@ public class QuestQueue : MonoBehaviour
     private GameObject questTable;
     private Text descr;
     private Text title;
+
+    public bool tutorialComplete { get { return quests.Count == 0; } }
     void Start()
     {
         quests = new Queue<Quest>(questsList);

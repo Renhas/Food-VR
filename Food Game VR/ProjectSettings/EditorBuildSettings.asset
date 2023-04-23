@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/ProjectFood/Scenes/Tutorial.unity
+    guid: 64fc5ba27f34fb2459954f2d208ccd26
+  - enabled: 1
     path: Assets/ProjectFood/Scenes/kitchen.unity
     guid: f1400184c40364e45a102e381a4c8077
   m_configObjects: {}

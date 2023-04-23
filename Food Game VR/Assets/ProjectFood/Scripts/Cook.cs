@@ -6,15 +6,17 @@ public class Cook : MonoBehaviour
 {
     private GameManager manager;
     public bool isCooked = false;
-    
-    
+    private AudioSource sound;
+
     void Start() 
     {
+        if (transform.childCount > 0) sound = transform.GetChild(0).gameObject.GetComponent<AudioSource>();
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     public IEnumerator Cooking() 
     {
+        if (sound != null) sound.Play();
         isCooked = false;
         float progress = 0;
         if (manager == null) Start();
@@ -27,6 +29,7 @@ public class Cook : MonoBehaviour
             yield return null;
         }
         isCooked = true;
+        if (sound != null) sound.Stop();
     }
 
 

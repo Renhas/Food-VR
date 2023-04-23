@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class Plate : MonoBehaviour
 {
     private InvManager inv;
+    public bool isDone { get { return transform.GetChild(0).gameObject.activeSelf; } }
 
     void Start()
     {
@@ -38,6 +39,7 @@ public class Plate : MonoBehaviour
 
         child.gameObject.SetActive(true);
         transform.GetChild(1).gameObject.SetActive(false);
+
 
         inv.Clear();
     }
