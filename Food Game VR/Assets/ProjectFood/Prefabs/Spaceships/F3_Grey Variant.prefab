@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3a41f28917b4df4bfff6c557dd1b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
-  movePosition: {x: 0, y: 0, z: 100}
+  moveValue: 10
 --- !u!1001 &2768636590358836198
 PrefabInstance:
   m_ObjectHideFlags: 0

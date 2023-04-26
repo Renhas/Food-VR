@@ -687,7 +687,6 @@ GameObject:
   m_Component:
   - component: {fileID: 130930675}
   - component: {fileID: 130930674}
-  - component: {fileID: 130930673}
   m_Layer: 0
   m_Name: ShipsSpawner (1)
   m_TagString: Untagged
@@ -695,20 +694,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &130930673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130930672}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4781ac632eda545b75a9c2da452525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movePos: {x: -80, y: 40, z: 50}
-  _moveSpeed: 2
 --- !u!114 &130930674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,7 +1301,6 @@ GameObject:
   m_Component:
   - component: {fileID: 442884222}
   - component: {fileID: 442884224}
-  - component: {fileID: 442884223}
   m_Layer: 0
   m_Name: ShipsSpawner (4)
   m_TagString: Untagged
@@ -1338,20 +1322,6 @@ Transform:
   m_Father: {fileID: 78543646}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &442884223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442884221}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4781ac632eda545b75a9c2da452525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movePos: {x: -80, y: 40, z: 50}
-  _moveSpeed: 2
 --- !u!114 &442884224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,7 +1393,6 @@ GameObject:
   m_Component:
   - component: {fileID: 464828331}
   - component: {fileID: 464828330}
-  - component: {fileID: 464828329}
   m_Layer: 0
   m_Name: ShipsSpawner (3)
   m_TagString: Untagged
@@ -1431,20 +1400,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &464828329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464828328}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4781ac632eda545b75a9c2da452525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movePos: {x: -80, y: 40, z: 50}
-  _moveSpeed: 2
 --- !u!114 &464828330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3503,7 +3458,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1037971721}
   - component: {fileID: 1037971723}
-  - component: {fileID: 1037971722}
   m_Layer: 0
   m_Name: ShipsSpawner (5)
   m_TagString: Untagged
@@ -3525,20 +3479,6 @@ Transform:
   m_Father: {fileID: 78543646}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1037971722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037971720}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4781ac632eda545b75a9c2da452525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movePos: {x: -80, y: 40, z: 50}
-  _moveSpeed: 2
 --- !u!114 &1037971723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4001,7 +3941,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1173323736}
   - component: {fileID: 1173323735}
-  - component: {fileID: 1173323737}
   m_Layer: 0
   m_Name: ShipsSpawner
   m_TagString: Untagged
@@ -4038,20 +3977,6 @@ Transform:
   m_Father: {fileID: 78543646}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1173323737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173323734}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4781ac632eda545b75a9c2da452525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movePos: {x: -80, y: 40, z: 50}
-  _moveSpeed: 2
 --- !u!1001 &1184941464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4591,7 +4516,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1453724943}
   - component: {fileID: 1453724945}
-  - component: {fileID: 1453724944}
   m_Layer: 0
   m_Name: ShipsSpawner (6)
   m_TagString: Untagged
@@ -4613,20 +4537,6 @@ Transform:
   m_Father: {fileID: 78543646}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1453724944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453724942}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4781ac632eda545b75a9c2da452525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movePos: {x: -80, y: 40, z: 50}
-  _moveSpeed: 2
 --- !u!114 &1453724945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4652,7 +4562,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1494029308}
   - component: {fileID: 1494029307}
-  - component: {fileID: 1494029306}
   m_Layer: 0
   m_Name: ShipsSpawner (2)
   m_TagString: Untagged
@@ -4660,20 +4569,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1494029306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494029305}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b4781ac632eda545b75a9c2da452525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movePos: {x: -80, y: 40, z: 50}
-  _moveSpeed: 2
 --- !u!114 &1494029307
 MonoBehaviour:
   m_ObjectHideFlags: 0

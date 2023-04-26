@@ -6,7 +6,7 @@ public class MoveShips : MonoBehaviour
 {
     private float time;
     [SerializeField]
-    private Vector3 movePosition;
+    private float moveValue;
     private Vector3 _startPosition;
     private float progress;
     void Start()
@@ -14,11 +14,9 @@ public class MoveShips : MonoBehaviour
         float x = Random.Range(0, 360);
         float y = Random.Range(0, 360);
         float z = Random.Range(0, 360);
-        time = Random.Range(0, 15);
+        time = Random.Range(0.001f, 15);
         transform.Rotate(x, y, z);
         _startPosition = transform.localPosition;
-        //movePosition = Quaternion.Euler(x, y, z) * movePosition;
-        movePosition = new Vector3(0, 0, movePosition.z);
         progress = 0;
         StartCoroutine(Move());
     }
@@ -27,8 +25,9 @@ public class MoveShips : MonoBehaviour
     {
         while (progress <= time)
         {
-            Vector3 offset = movePosition * Mathf.Lerp(0, 1, progress / time);
+            Vector3 offset = moveValue * transform.forward * Mathf.Lerp(0, 1, progress / time);
             transform.localPosition = _startPosition + offset;
+            Debug.Log(_startPosition + offset);
             progress = progress + Time.deltaTime;
             yield return null;
         }
