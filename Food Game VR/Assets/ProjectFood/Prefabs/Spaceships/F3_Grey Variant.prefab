@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveValue: 20
+  minTime: 10
+  maxTime: 20
 --- !u!1001 &2768636590358836198
 PrefabInstance:
   m_ObjectHideFlags: 0
