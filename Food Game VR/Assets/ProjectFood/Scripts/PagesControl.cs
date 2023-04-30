@@ -15,11 +15,6 @@ public class PagesControl : MonoBehaviour
         Reset();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void Reset() 
     {
         transform.GetChild(0).gameObject.SetActive(true);

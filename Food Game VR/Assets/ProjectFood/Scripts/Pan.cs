@@ -12,7 +12,6 @@ public class Pan : MonoBehaviour
     
     void Start()
     {
-        
         inv = GameObject.Find("Inventory").GetComponent<InvManager>();
         child = transform.GetChild(0).gameObject;
         child.SetActive(false);
@@ -54,7 +53,6 @@ public class Pan : MonoBehaviour
         child.SetActive(true);
         StartCoroutine(child.GetComponent<Cook>().Cooking());
         
-
         inv.Clear();
     }
 

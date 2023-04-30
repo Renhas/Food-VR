@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR.WSA.Input;
+﻿using UnityEngine;
 
 public class Move : MonoBehaviour
 {
@@ -14,7 +10,6 @@ public class Move : MonoBehaviour
         _startPos = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 offset = _movePos * Mathf.PingPong(Time.time * _moveSpeed, 1f);

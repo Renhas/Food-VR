@@ -12,12 +12,6 @@ public class GenerateObject : MonoBehaviour
         StartCoroutine(Generate());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private IEnumerator Generate() 
     {
         while (true)

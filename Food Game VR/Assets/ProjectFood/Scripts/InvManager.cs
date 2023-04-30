@@ -26,5 +26,4 @@ public class InvManager : MonoBehaviour
         Destroy(object_in_inventory);
         object_in_inventory = null;
     }
-
 }

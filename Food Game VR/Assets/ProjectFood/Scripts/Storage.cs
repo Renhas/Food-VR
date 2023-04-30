@@ -18,12 +18,6 @@ public class Storage : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void TriggerCreate() 
     {
         var trigger = GetComponent<EventTrigger>();
